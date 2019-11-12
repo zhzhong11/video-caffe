@@ -1,0 +1,5 @@
+src/caffe/globalmotion/GMEParameter.cpp: In member function ‘void GMEParameter::errorHist(const cv::Mat&)’:
+src/caffe/globalmotion/GMEParameter.cpp:101:32: warning: narrowing conversion of ‘minv’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  float hRanges[2] = {minv, maxv};
+                                ^
+src/caffe/globalmotion/GMEParameter.cpp:101:32: warning: narrowing conversion of ‘maxv’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
