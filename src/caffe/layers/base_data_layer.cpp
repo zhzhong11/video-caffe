@@ -28,6 +28,9 @@ void BaseDataLayer<Dtype>::LayerSetUp(const vector<Blob<Dtype>*>& bottom,
   data_transformer_.reset(
       new DataTransformer<Dtype>(transform_param_, this->phase_));
   data_transformer_->InitRand();
+  image_transformer_.reset(
+      new DataTransformer<Dtype>(transform_param_, this->phase_));
+  image_transformer_->InitRand();
   // The subclasses should setup the size of bottom and top
   DataLayerSetUp(bottom, top);
 }
